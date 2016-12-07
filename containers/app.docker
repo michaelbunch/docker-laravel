@@ -1,0 +1,8 @@
+FROM php:7.0-fpm
+MAINTAINER Michael Bunch <michael@caeynastudios.com>
+
+RUN apt-get update && \
+    apt-get install -y libmcrypt-dev mysql-client && \
+    docker-php-ext-install mcrypt pdo_mysql
+
+WORKDIR /var/www
