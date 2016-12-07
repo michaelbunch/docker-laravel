@@ -45,4 +45,4 @@ Database container that uses MariaDB. This can be switched to other database con
 
 ### Redis
 
-Redis container.
+Redis container for queues, sessions, and other key/value storage.
